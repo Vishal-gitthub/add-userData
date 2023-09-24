@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.split {
+  display: flex;
+}
+.container {
+  border: 1px solid rgba(128, 128, 128, 0.425);
+  width: 500px;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+#storedData div {
+  display: flex;
+  gap: 20px;
+  border-radius: 8px;
+  justify-content: space-around;
+  background-color: cornsilk;
+  padding: 6px 12px;
+  margin-bottom: 5px;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+}
+svg {
+  width: 100%;
+}
+
+svg:hover {
+  transform: rotate(10deg);
+}
+.btn {
+  margin-top: 20px;
+  padding: 5px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.212);
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+}
+.userN {
+  width: 200px;
+  padding: 10px 15px;
+  border: 1px solid rgba(128, 128, 128, 0.61);
+  border-radius: 10px;
+}
+
+.userE {
+  width: 200px;
+  padding: 10px 15px;
+  border: 1px solid rgba(128, 128, 128, 0.61);
+  border-radius: 10px;
+}
+
+.rightSideBar {
+  width: 550px;
+  height: 100vh;
+  border-radius: 8px;
+  /* margin:20px; */
+  background-color: rgb(79, 122, 179);
+}
+
+#collectedData {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.rytCard {
+  /* border: 1px solid rgba(128, 128, 128, 0.363); */
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  overflow-y: scroll;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.ryt-heading {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  text-align: center;
+}
+.inpContainer {
+  display: flex;
+  gap: 20px;
+}
+.alert {
+  display: none;
+}
+.alert-exist {
+  background-color: rgba(229, 240, 228, 0.342);
+  color: rgba(0, 0, 0, 0.637);
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-top: 10px;
+ 
+  border-radius: 8px;
+  animation: exist 0.5s forwards;
+  /* border: 1px solid rgb(199, 85, 85); */
+}
+.alert-added {
+  background-color: rgb(236, 218, 218);
+  color: rgb(20, 0, 0);
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  animation: added 0.5s forwards;
+  /* border: 1px solid rgb(199, 85, 85); */
+}
+@keyframes added {
+  from {
+  }
+  to {
+    margin-top: 12px;
+    background-color: rgb(236, 41, 35);
+    color: rgb(255, 233, 233);
+  }
+}
+@keyframes exist{
+  from{}
+  to{
+    margin-top: 10px;
+    background-color:rgb(91, 185, 91);
+    color: black;
+  }
+}

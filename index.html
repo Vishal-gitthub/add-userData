@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div class="split">
+            <div class="container">
+                <h1 class="logo">✍️</h1>
+                <p>This is a simple app where you can store your Data</p>
+                <div class="inpContainer">
+                    <input type="text" placeholder="Enter Your Name" name="" id="userName" required class="userN">
+                    <input type="email" name="" id="userEmail" placeholder="Enter Your Email" required class="userE">
+                </div>
+                <button id="btn" class="btn" onclick="sendData()">Submit</button>
+                <div class="alert" id="alertSuc">User Exist</div>
+                <div class="alert" id="alertDan">User Added</div>
+            </div>
+            <div class="rightSideBar">
+                <div class="rytCard" id="rytCard">
+                    <h1 class="ryt-heading">STORED DATA</h1>
+                    <div id="storedData">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+
+    </html>
+</body>
+
+</html>
